@@ -1,0 +1,65 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<body>
+@* 
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="card-body" style="position: absolute; left: 350px;">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-2-strong">
+                        <div class="card-body">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index7"><b>Sümer Üst Geçiti</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-2-strong">
+                        <div class="card-body">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index100"><b>Fakülte</b></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-2-strong">
+                        <div class="card-body">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index8"><b>Devlet Hastanesi</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> *@
+
+    <ul class="menu cf">
+        <li><a href="Index">Giriş Ekranı</a></li>
+        <li>
+            <a href="">Kavşak</a>
+            <ul class="submenu">
+                <li><a href="Index7">Sümer Üst Geçiti</a></li>
+                <li><a href="Index100">Fakülte</a></li>
+                <li><a href="Index8">Devlet Hastanesi</a></li>
+               
+            </ul>
+        </li>
+        <li><a href=" javascript:void(0);" onclick="confirmCloseWindow()">Pencereyi Kapat</a></li>
+      @*  <li><a href="">Menu item</a></li>
+        <li><a href="">Menu item</a></li> *@
+    </ul>
+
+
+    <script>
+        function confirmCloseWindow() {
+            var confirmation = confirm("Çıkmak mı istiyorsunuz?");
+            if (confirmation) {
+                window.close();
+            }
+        }
+
+        window.onbeforeunload = function () {
+            return "Çıkmak mı istiyorsunuz?";
+        };
+    </script>
+
+</body>

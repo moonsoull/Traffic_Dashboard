@@ -1,0 +1,61 @@
+﻿
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6" style="margin-right: auto;">
+                <div class="card shadow-2-strong">
+                    <div class="card-body">
+                        <canvas id="pie-chart7" width="675" height="500"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-2-strong">
+                    <div class="card-body">
+                        <canvas id="doughnut-chart7" width="675" height="500"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 mt-4">
+                <div class="card shadow-2-strong">
+                    <div class="card-body">
+                        <canvas id="line-chart7" width="1350" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-6" style="margin-right: auto;">
+                <div class="card shadow-2-strong">
+                    <div class="card-body">
+                        <canvas id="bar-chart-horizontal7" width="675" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-2-strong">
+                    <div class="card-body">
+                        <canvas id="bar-chart-horizontal7_1" width="675" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div style="position: fixed; bottom: 0; left: 0; width: 100%;">
+                <button onclick="goBack()" style="border-radius: 50%; border-color: #fa6c07 ; background-color: #faa76c; width: 50px; height: 50px; margin: 0 auto; display: block;"><b> 🢀 </b></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+@section masterjs
+    {
+
+    <script src="/js/home7.js"></script>
+
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    }
